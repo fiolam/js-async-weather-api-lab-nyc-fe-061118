@@ -39,7 +39,9 @@ let cityForm =document.getElementById("cityForm");
 cityForm.addEventListener("submit", handleFormSubmit)
 })
 function fetchFiveDayForecast(city) {
-fetch("api.openweathermap.org/data/2.5/forecast?q=" + city + "&APPID=" + API_KEY + "&units=imperial")
+  fetch("api.openweathermap.org/data/2.5/forecast?q=" + city + "&APPID=" + API_KEY + "&units=imperial")
+  .then(response => response.json())
+  .then(displayFiveDayForecast)
 }
 
 function displayFiveDayForecast(json) {
