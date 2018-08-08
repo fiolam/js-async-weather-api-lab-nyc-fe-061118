@@ -25,8 +25,9 @@ function displayWeather(weatherJson){
   let temp_maxRow =document.getElementById("high")
   temp_maxRow.innerHTML = temp_max
   
-  temp humidity = weatherJson.main.humidity
-  
+  let humidity = weatherJson.main.humidity
+  let humidityRow = document.getElementById("humidity")
+  humidityRow.innerHTML = humidity
   
 }
 document.addEventListener('DOMContentLoaded', function() {
