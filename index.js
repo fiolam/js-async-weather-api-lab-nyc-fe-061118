@@ -39,7 +39,7 @@ let cityForm =document.getElementById("cityForm");
 cityForm.addEventListener("submit", handleFormSubmit)
 })
 function fetchFiveDayForecast(city) {
-
+fetch("api.openweathermap.org/data/2.5/forecast?q=" 
 }
 
 function displayFiveDayForecast(json) {
