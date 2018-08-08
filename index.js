@@ -13,7 +13,7 @@ function handleFormSubmit(event){
 
 
 function getWeatherFromApi(city) {
-  fetch("https://api.openweathermap.org/data/2.5/weather?" + city + "APPID" + API_KEY + "&units=imperial")
+  fetch("https://api.openweathermap.org/data/2.5/weather?" + city + "&APPID" + API_KEY + "&units=imperial")
   .then(response => response.json())
   .then(displayWeather)
 }
