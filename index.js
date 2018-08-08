@@ -24,7 +24,7 @@ function displayWeather(weatherJson){
   tempRow.innerHTML = temp
   let temp_min = weatherJson.main.temp_min
   let temp_minRow = document.getElementById("temp_min")
-  temp_minRow.innerHTML = Low
+  temp_minRow.innerHTML = temp
 }
 document.addEventListener('DOMContentLoaded', function() {
   //add event listener here for form submission
