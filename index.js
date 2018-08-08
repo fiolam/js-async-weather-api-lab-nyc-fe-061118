@@ -1,7 +1,8 @@
 const API_KEY = "YOUR API KEY"
 const BASE_URL= 'https://api.openweathermap.org/data/2.5/weather?'
 
-function handleFormSubmit (event) {
+function handleFormSubmit(event){
+  event.preventDefault():
   let city =document.getElementById("city").value
   getWeatherFromApi(city)
 }
@@ -11,10 +12,14 @@ function handleFormSubmit (event) {
 }
 
 
-function getTheWeatherFromApi(city) {
+function getWeatherFromApi(city) {
   fetch("https://api.openweathermap.org/data/2.5/weather?" + city)
+  .then(response => response.json())
+  .then(displayWeather)
 }
-
+function displayWeather(weatherJson){
+  
+}
 
 
 document.addEventListener('DOMContentLoaded', function() {
