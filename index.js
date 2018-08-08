@@ -27,5 +27,5 @@ function displayWeather(weatherJson){
 document.addEventListener('DOMContentLoaded', function() {
   //add event listener here for form submission
 let cityForm =document.getElementById("cityForm");
-cityForm.addEventListener("submit", HanndleFormSubmit)
+cityForm.addEventListener("submit", handleFormSubmit)
 })
