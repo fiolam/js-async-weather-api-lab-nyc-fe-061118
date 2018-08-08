@@ -28,6 +28,7 @@ function displayWeather(weatherJson){
   let temp_max =weatherJson.main.temp_max
   let temp_maxRow =document.getElementById("high")
   temp_maxRow.innerHTML = temp_max
+  let 
 }
 document.addEventListener('DOMContentLoaded', function() {
   //add event listener here for form submission
