@@ -3,7 +3,9 @@ const API_URL= "http://api.openweathermap.org/data/2.5/weather?"
 
 function handleFormSubmit(event) {
   alert("thanks for submitting the form")
-  //handle submit event
+  debugger;
+  //next i need to send a qeb request to this url : api.openweathermap.org/data/2.5/weather?q=London
+  //i need to substitute london with another city
 }
 
 function fetchCurrentWeather(city) {
