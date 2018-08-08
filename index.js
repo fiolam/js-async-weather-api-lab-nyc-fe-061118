@@ -15,7 +15,7 @@ function displayWeather(weatherJson){
   let temp = weatherJson.main.temp
   let tempRow = document.getElementById("temp")
   tempRow.innerHTML = temp
-  
+  debugger;
   let temp_min = weatherJson.main.temp_min
   let temp_minRow = document.getElementById("low")
   temp_minRow.innerHTML = temp_min
