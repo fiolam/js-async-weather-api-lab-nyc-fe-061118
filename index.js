@@ -15,7 +15,7 @@ function displayWeather(weatherJson){
   let temp = weatherJson.main.temp
   let tempRow = document.getElementById("temp")
   tempRow.innerHTML = temp
-  debugger;
+
   let temp_min = weatherJson.main.temp_min
   let temp_minRow = document.getElementById("low")
   temp_minRow.innerHTML = temp_min
@@ -27,7 +27,9 @@ function displayWeather(weatherJson){
   let humidity = weatherJson.main.humidity
   let humidityRow = document.getElementById("humidity")
   humidityRow.innerHTML = humidity
-  let tempClouds = weatherJson.weather.0.cloud
+  let tempClouds = weatherJson.weather.clouds.all
+  let tempCloudsRow = document.getElementById("clouds")
+  tempCloudsRow.innerHTML = clouds
   
 }
 document.addEventListener('DOMContentLoaded', function() {
