@@ -27,7 +27,7 @@ function displayWeather(weatherJson){
   let humidity = weatherJson.main.humidity
   let humidityRow = document.getElementById("humidity")
   humidityRow.innerHTML = humidity
-  let tempClouds = weatherJson.weather.clouds.all
+  let tempClouds = weatherJson.clouds.all;
   let tempCloudsRow = document.getElementById("clouds")
   tempCloudsRow.innerHTML = clouds
   
