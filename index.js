@@ -6,12 +6,6 @@ function handleFormSubmit(event){
   let city =document.getElementById("city").value
   getWeatherFromApi(city)
 }
-
-  //next i need to send a qeb request to this url : api.openweathermap.org/data/2.5/weather?q=London
-  //i need to substitute london with another city
-//}
-
-
 function getWeatherFromApi(city) {
   fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + API_KEY + "&units=imperial")
   .then(response => response.json())
@@ -22,13 +16,18 @@ function displayWeather(weatherJson){
   let temp = weatherJson.main.temp
   let tempRow = document.getElementById("temp")
   tempRow.innerHTML = temp
+  
   let temp_min = weatherJson.main.temp_min
   let temp_minRow = document.getElementById("low")
   temp_minRow.innerHTML = temp_min
+  
   let temp_max =weatherJson.main.temp_max
   let temp_maxRow =document.getElementById("high")
   temp_maxRow.innerHTML = temp_max
-   
+  
+  temp humidity = weatherJson.main.humidity
+  
+  
 }
 document.addEventListener('DOMContentLoaded', function() {
   //add event listener here for form submission
