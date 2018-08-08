@@ -1,4 +1,4 @@
-const API_KEY = "5d091d4dfe7df5a55e19d9f4ab99cdd1"
+const API_KEY = "5357d0ee7dd6ec614e764228b9249e29"
 const BASE_URL='https://api.openweathermap.org/data/2.5/weather?'
 
 function handleFormSubmit(event){
