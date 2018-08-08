@@ -11,8 +11,7 @@ function getWeatherFromApi(city) {
   fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + API_KEY + "&units=imperial")
   .then(response => response.json())
   .then(displayWeather)
-  .then(display)
-}.
+}
 function displayWeather(weatherJson){
   let temp = weatherJson.main.temp
   let tempRow = document.getElementById("temp")
