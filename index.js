@@ -9,7 +9,7 @@ function handleFormSubmit(event){
 
   //next i need to send a qeb request to this url : api.openweathermap.org/data/2.5/weather?q=London
   //i need to substitute london with another city
-}
+//}
 
 
 function getWeatherFromApi(city) {
