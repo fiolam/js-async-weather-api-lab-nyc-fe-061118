@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 let cityForm =document.getElementById("cityForm");
 cityForm.addEventListener("submit", handleFormSubmit)
 })
-Function fetchFiveDayForecast(city) {
+function fetchFiveDayForecast(city) {
 
 }
 
