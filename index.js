@@ -2,7 +2,7 @@ const API_KEY = "YOUR API KEY"
 const API_URL= "https://samples.openweathermap.org/data/2.5/forecast?id=524901&appid=b1b15e88fa797225412429c1c50c122a1"
 
 function handleFormSubmit(event) {
-  
+  alert("thanks for submitting the form")
   //handle submit event
 }
 
@@ -29,5 +29,5 @@ function createChart(json) {
 
 document.addEventListener('DOMContentLoaded', function() {
   //add event listener here for form submission
-  $("form")on("submit", handleFormSubmit)
-})
+let cityForm =document,getElementById("cityForm");
+cityForm.addEventListener("submit", HanndleFormSubmit)
