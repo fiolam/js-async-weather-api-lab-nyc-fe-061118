@@ -5,6 +5,7 @@ function handleFormSubmit(event) {
  // alert("thanks for submitting the form")
   debugger;
   let city =document.getElementById("city").value
+  getWeatherFromApi(city)
   //next i need to send a qeb request to this url : api.openweathermap.org/data/2.5/weather?q=London
   //i need to substitute london with another city
 }
