@@ -5,12 +5,12 @@ function handleFormSubmit(event){
   event.preventDefault();
   let city =document.getElementById("city").value
   getWeatherFromApi(city)
+  fetchFiveDayForecast(city)
 }
 function getWeatherFromApi(city) {
   fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + API_KEY + "&units=imperial")
   .then(response => response.json())
   .then(displayWeather)
-  .then()
 }
 function displayWeather(weatherJson){
   let temp = weatherJson.main.temp
