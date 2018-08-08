@@ -23,7 +23,7 @@ function displayWeather(weatherJson){
   let tempRow = document.getElementById("temp")
   tempRow.innerHTML = temp
   let temp_min = weatherJson.main.temp_min
-  let temp_minRow = docoument.getElementById("temp_min")
+  let temp_minRow = document.getElementById("temp_min")
   temp_minRow.innerHTML = temp_min
 }
 document.addEventListener('DOMContentLoaded', function() {
