@@ -1,5 +1,5 @@
 const API_KEY = "YOUR API KEY"
-const API_URL= "http://api.openweathermap.org/data/2.5/weather?"
+const BASE_URL= "http://api.openweathermap.org/data/2.5/weather?"
 
 function handleFormSubmit(event) {
   alert("thanks for submitting the form")
