@@ -38,3 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
 let cityForm =document.getElementById("cityForm");
 cityForm.addEventListener("submit", handleFormSubmit)
 })
+Function fetchFiveDayForecast(city) {
+
+}
+
+function displayFiveDayForecast(json) {
+ //render five day forecast data to the DOM using provided IDs and json from API
+}
+
