@@ -1,35 +1,21 @@
 const API_KEY = "YOUR API KEY"
 const BASE_URL= 'https://api.openweathermap.org/data/2.5/weather?'
 
-function handleFormSubmit(event) {
- // alert("thanks for submitting the form")
-  debugger;
+function handleFormSubmit (event) {
   let city =document.getElementById("city").value
   getWeatherFromApi(city)
+}
+
   //next i need to send a qeb request to this url : api.openweathermap.org/data/2.5/weather?q=London
   //i need to substitute london with another city
 }
 
-function fetchCurrentWeather(city) {
-  //fetch current weather based on city
-}
 
-function displayCurrentWeather(json) {
-  //render current weather data to the DOM using provided IDs and json from API
+function getTheWeatherFromApi(city) {
+  fetch("https://api.openweathermap.org/data/2.5/weather?" + city)
 }
 
 
-function fetchFiveDayForecast(city) {
-  //fetch five day forecast data based on city
-}
-
-function displayFiveDayForecast(json) {
-  //render five day forecast data to the DOM using provided IDs and json from API
-}
-
-function createChart(json) {
-  //Bonus: render temperature chart using five day forecast data and ChartJS
-}
 
 document.addEventListener('DOMContentLoaded', function() {
   //add event listener here for form submission
